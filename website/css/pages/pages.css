@@ -1,0 +1,51 @@
+/* USER VARIABLES SECTION */
+
+:root {
+	--accent: #A3403B;
+	--deep: #171A1A;
+	--dark: #202328;
+	--middle-gray: #B3B3B3;
+	--dark-content: #333333;
+	--deep-content: #222222;
+	--text: #fff;
+
+	--shadow-light: 0 2px 20px rgba(0, 0, 0, .3);
+
+	--small-text: 14px;
+	--regular-text: 16px;
+	--medium-text: 18px;
+	--regular-header: 29px;
+	--middle-header: 18px;
+	--lineheight: 1.7;
+	--userfont: raleway-tls, sans-serif;
+	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+
+	--transition: .25s ease-out;
+}
+
+/* BOOTSTRAP SETTINGS SECTION */
+
+/* gutter 20px (10px + 10px). Comment this code for default gutter start at 1.5rem (24px) wide. */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { --bs-gutter-x: .625rem; }
+.row, .row > * { --bs-gutter-x: 1.25rem; }
+
+/* GENERAL CSS SETTINGS */
+
+::placeholder { color: #666; }
+::selection { background-color: var(--accent); color: #fff; }
+input, textarea { outline: none; }
+input:focus:required:invalid, textarea:focus:required:invalid { border-color: red; }
+input:required:valid, textarea:required:valid { border-color: green; }
+
+body {
+	font-family: var(--userfont);
+	font-size: var(--regular-text);
+	line-height: var(--lineheight);
+	font-weight: 400;
+	color: var(--text);
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}

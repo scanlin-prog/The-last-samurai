@@ -1,0 +1,556 @@
+/* === DESKTOP FIRST === */
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1399px) {
+
+	/* HEADER */
+
+	.header .container {
+		max-width: 1140px;
+	}
+
+	.header__menu-item {
+		margin: 0 7px;
+	}
+
+	.header__main-logo-link {
+		margin: 0 15px;
+	}
+
+	/* BANNER */
+
+	.banner-image {
+		background-image: url(../../images/main/banner.png);
+		background-size: contain;
+	}
+
+	/* DESTINY */
+
+	.destiny__image {
+		width: 100%;
+	}
+
+	/* AWARDS */
+
+	.awards .container {
+		max-width: 1140px;
+	}
+
+	.awards-info {
+		width: 92%;
+	}
+
+	.awards-text {
+		width: 92%;
+		padding-left: 35px;
+	}
+
+	.awards-info__subtitle {
+		padding: 4px 14px;
+	}
+}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1199px) {
+
+	/* HEADER */
+
+	.header .container {
+		max-width: 960px;
+	}
+
+	.header__logo {
+		width: 60px;
+		height: 72px;
+	}
+
+	.header__menu-item {
+		margin: 0 3px;
+	}
+
+	.header__main-logo-link {
+		margin: 0 10px;
+	}
+
+	.header__main-logo {
+		width: 190px;
+	}
+
+	.banner {
+		margin-top: 102px;
+	}
+
+	/* AWARDS */
+
+	.awards .container {
+		max-width: 960px;
+	}
+
+	.awards-info {
+		width: calc(100% - 20px);
+	}
+
+	.awards-text {
+		width: calc(100% - 20px);
+		padding-left: 35px;
+	}
+
+	.awards-info__subtitle {
+		padding: 4px 14px;
+	}
+
+	.awards__image {
+		margin-bottom: 20px;
+	}
+
+	.awards__image:last-of-type {
+		margin: 0 auto 70px;
+	}
+
+	/* FOOTER */
+
+	.footer-contacts__container {
+		margin: 25px auto;
+	}
+
+	.footer-info {
+		max-width: 960px;
+	}
+
+	.footer-info__logo {
+		width: 140px;
+		margin: 25px 0;
+	}
+
+	.footer-info__text {
+		margin-bottom: 70px;
+	}
+
+	.footer-info__copyright {
+		margin-bottom: 50px;
+	}
+}
+
+/* md <= Large (lg) */
+@media (max-width : 991px) {
+
+	/* HEADER */
+
+	.header {
+		padding: 0 30px;
+	}
+
+	.header-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity var(--transition),
+			visibility var(--transition);
+	}
+
+	.header-overlay_active {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.header__main-logo {
+		width: 180px;
+		margin: 0 auto;
+	}
+
+	.header__menu {
+		position: absolute;
+		top: 102px;
+		left: 0;
+		border-top: 1px solid gray;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity var(--transition),
+			visibility var(--transition);
+	}
+
+	.header__menu_active {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.header__menu-items {
+		flex-direction: column;
+		align-items: start;
+		width: 100%;
+		background-color: var(--deep);
+
+	}
+
+	.header__menu-item {
+		margin-bottom: 7px;
+		margin-left: 50px;
+	}
+
+	.header__menu-item:first-of-type {
+		margin-top: 12px;
+	}
+
+	.header__menu-item:last-of-type {
+		margin-bottom: 12px;
+	}
+
+	.header__menu-link {
+		font-size: 14px;
+		padding: 7px 10px;
+	}
+
+	.header__icon-lang {
+		display: none;
+	}
+
+	.header__languages {
+		position: absolute;
+		flex-direction: column;
+		width: 100px;
+		right: 53px;
+		top: 14px;
+		padding: 0;
+		margin: 0;
+		border: none;
+		text-align: end;
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.header__languages::before,
+	.header__languages::after {
+		display: none;
+	}
+
+	.header__lang {
+		margin-bottom: 10px;
+		padding: 0;
+		border: none;
+	}
+
+	.header__lang_activity {
+		text-decoration: underline;
+	}
+
+	.header__icon-nav {
+		transform: translateX(100%);
+	}
+
+	.header__icon-close {
+		transform: translateX(100%);
+	}
+
+	/* DESTINY */
+
+	.destiny__line {
+		margin: 50px auto 20px;
+	}
+
+	.destiny__title {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+	.destiny__image {
+		margin-bottom: 50px;
+	}
+
+	/* AWARDS */
+
+	.awards .container {
+		max-width: 720px;
+	}
+
+	.awards-info {
+		margin-top: 50px;
+	}
+
+	.awards-info__left {
+		margin: 15px;
+	}
+
+	.awards-info__title {
+		font-size: 22px;
+	}
+
+	.awards-info__describe {
+		font-size: 14px;
+
+	}
+
+	.awards-info__button {
+		width: 180px;
+		height: 40px;
+		margin: 15px;
+	}
+
+	.awards-info__subtitle {
+		padding: 1px 8px;
+		font-size: 14px;
+		top: -14px;
+	}
+
+	.awards-text {
+		padding-left: 25px;
+		margin-bottom: 30px;
+	}
+
+	.awards__image:last-of-type {
+		margin-bottom: 50px;
+	}
+
+	/* FOOTER */
+
+	.footer-contacts__container {
+		margin: 20px auto;
+	}
+
+	.footer-info {
+		padding: 0 30px;
+	}
+
+}
+
+/* sm <= Medium (md) */
+@media (max-width : 767px) {
+
+	/* HEADER */
+
+	.header {
+		padding: 0 25px;
+	}
+
+	.header__icon-nav {
+		transform: translateX(0);
+	}
+
+	.header__icon-close {
+		transform: translateX(0);
+	}
+
+	/* DESTINY */
+
+	.destiny__title {
+		width: 500px;
+	}
+
+	/* AWARDS */
+
+	.awards {
+		padding: 0 25px;
+	}
+
+	.awards-info {
+		flex-direction: column;
+		padding: 0;
+		text-align: center;
+	}
+
+	.awards-info__left {
+		margin: 20px auto 0;
+	}
+
+	.awards-info__title {
+		font-size: 24px;
+	}
+
+	.awards-info__button {
+		width: 240px;
+		height: 50px;
+	}
+
+	.awards-info__subtitle {
+		white-space: nowrap;
+	}
+
+	.awards-text {
+		padding: 0;
+		text-align: center;
+	}
+
+	.awards__image-describe {
+		font-size: var(--small-text);
+		line-height: 1.5;
+		width: 90%;
+	}
+
+	/* FOOTER */
+
+	.footer-contacts__icon-link {
+		margin: 0 3px;
+	}
+
+	.footer-info {
+		padding: 0 25px;
+	}
+
+	.footer__button {
+		width: 40px;
+		height: 40px;
+	}
+
+	.footer__button-icon {
+		margin-top: 2px;
+	}
+
+	.footer__button {
+		right: 40px;
+		bottom: 6%;
+	}
+}
+
+/* xs <= Small (sm) */
+@media (max-width : 575px) {
+
+	/* HEADER */
+
+	.header {
+		padding: 0 5px;
+	}
+
+	.header .row {
+		margin: 10px auto;
+	}
+
+	.header__main-logo {
+		width: 135px;
+	}
+
+	.header__menu {
+		top: 92px;
+	}
+
+	.header__menu-item {
+		margin-bottom: 5px;
+		margin-left: 30px;
+	}
+
+	.header__menu-item:first-of-type {
+		margin-top: 12px;
+	}
+
+	.header__menu-item:last-of-type {
+		margin-bottom: 12px;
+	}
+
+	.header__icon-nav {
+		width: 20px;
+		height: 20px;
+	}
+
+	.header__icon-close {
+		width: 30px;
+		height: 30px;
+	}
+
+	.header__languages {
+		right: 28px;
+		top: 15px;
+	}
+
+	.header__lang {
+		margin-bottom: 7px;
+	}
+
+	/* BANNER */
+
+	.banner {
+		margin-top: 92px;
+	}
+
+	/* DESTINY */
+
+	.destiny__line {
+		margin: 30px auto 15px;
+	}
+
+	.destiny__title {
+		width: 78%;
+		font-size: 16px;
+	}
+
+	.destiny__image {
+		margin-bottom: 30px;
+	}
+
+	/* AWARDS */
+
+	.awards {
+		padding: 0;
+	}
+
+	.awards-info {
+		margin-top: 30px;
+	}
+
+	.awards-info__title {
+		font-size: 22px;
+	}
+
+	.awards__image {
+		margin: 0 auto 20px;
+		max-width: 380px;
+	}
+
+	.awards__image:last-of-type {
+		margin-bottom: 30px;
+	}
+
+	.awards__image-describe {
+		font-size: var(--regular-text);
+		line-height: 1.7;
+	}
+
+	/* FOOTER */
+
+	.footer-contacts {
+		padding: 0 15px;
+	}
+
+	.footer-contacts__container {
+		margin: 10px auto;
+		flex-direction: column;
+	}
+
+	.footer-contacts__title {
+		font-size: var(--regular-text);
+		margin-bottom: 3px;
+		margin-right: 0;
+	}
+
+	.footer-contacts__icon-link {
+		width: 25px;
+		height: 25px;
+		margin: 0 5px;
+	}
+
+	.footer-info {
+		padding: 0 15px;
+	}
+
+	.footer-info__logo {
+		width: 120px;
+		margin: 20px auto;
+	}
+
+	.footer-info__text {
+		margin-bottom: 40px;
+	}
+
+	.footer-info__copyright {
+		margin-bottom: 30px;
+	}
+
+	.footer__button {
+		right: 30px;
+		bottom: 4%;
+	}
+
+}
