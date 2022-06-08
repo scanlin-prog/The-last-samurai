@@ -1,0 +1,43 @@
+.about {
+	background-color: var(--dark-content);
+}
+
+.about .container {
+	max-width: 1180px;
+}
+
+.about .row {
+	flex-direction: column;
+	align-items: center;
+}
+
+.about__content {
+	margin: 70px 0 45px;
+}
+
+.about__content-text {
+	text-align: center;
+	margin: 0 0 30px;
+}
+
+.about__content-text:last-of-type {
+	margin-bottom: 0;
+}
+
+.about__trailer {
+	position: relative;
+	padding: 0 10px 40%;
+	height: 0;
+	overflow: hidden;
+	margin: 0 0 70px;
+}
+
+.about__trailer iframe,
+.about__trailer object,
+.about__trailer embed {
+	position: absolute;
+	top: 0;
+	left: 10px;
+	width: calc(100% - 20px);
+	height: 100%;
+}

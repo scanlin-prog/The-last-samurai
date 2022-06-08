@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
 
-	<meta charset="utf-8">
-	<!-- <base href="/"> -->
-
-	<title>Simple Starter</title>
-	<meta name="description" content="Simple Starter Description">
-
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="description" content="Главная страница" />
+	<meta name="keywords" content="кино, самураи, традиции" />
+	<meta name="author" content="Иван Ротарь" />
+	<link rel="icon" href="./images/icons/samurai_face.svg" />
+	<meta property="og:image" content="images/preview.jpg" />
 
-	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/preview.jpg">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css" />
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css" />
 
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/pages/main.css" />
 
-	<link rel="stylesheet" href="css/index.css">
+	<title>The last samurai</title>
 
 </head>
 
@@ -31,19 +31,21 @@
 				<div class="col col-lg header__logo"></div>
 
 				<div class="col-8 d-lg-none header__main-logo-link">
-					<a href="/index.html">
+					<a href="/website/main.html">
 						<div class="header__main-logo"></div>
 					</a>
 				</div>
 
 				<div class="d-lg-flex col-lg-10 header__menu">
 					<ul class="header__menu-items">
-						<li class="header__menu-item"><a href="/index.html" class="header__menu-link header__menu-link_active">Главная</a>
+						<li class="header__menu-item"><a href="/website/main.html"
+								class="header__menu-link header__menu-link_active">Главная</a>
 						</li>
-						<li class="header__menu-item "><a href="#" class="header__menu-link">О фильме</a></li>
+						<li class="header__menu-item"><a href="/website/pages/about.html" class="header__menu-link">О фильме</a>
+						</li>
 						<li class="header__menu-item"><a href="#" class="header__menu-link">Актёры</a></li>
 						<li class="header__menu-item header__main-logo-link d-none d-lg-block">
-							<a href="/index.html">
+							<a href="/website/main.html">
 								<div class="header__main-logo"></div>
 							</a>
 						</li>
@@ -141,13 +143,13 @@
 			<div class="footer-contacts__container">
 				<div class="footer-contacts__title">Автор в соц. сетях</div>
 				<div class="footer-contacts__icons">
-					<a href="https://t.me/scanlin" class="footer-contacts__icon-link">
+					<a href="https://t.me/scanlin" class="footer-contacts__icon-link" target="_blank">
 						<div class="footer-contacts__icon footer-contacts__icon-telegram"></div>
 					</a>
-					<a href="https://vk.com/scanlin" class="footer-contacts__icon-link">
+					<a href="https://vk.com/scanlin" class="footer-contacts__icon-link" target="_blank">
 						<div class="footer-contacts__icon footer-contacts__icon-vk"></div>
 					</a>
-					<a href="https://github.com/scanlin-prog" class="footer-contacts__icon-link">
+					<a href="https://github.com/scanlin-prog" class="footer-contacts__icon-link" target="_blank">
 						<div class="footer-contacts__icon footer-contacts__icon-github"></div>
 					</a>
 

@@ -1,4 +1,4 @@
-# Проект: [Последний самурай](https://scanlin-prog.github.io/The-last-samurai/website/index.html "Сайт от Архонта") 
+# Проект: [Последний самурай](https://scanlin-prog.github.io/The-last-samurai/website/main.html "Сайт от Архонта") 
 
 ### О проекте
 

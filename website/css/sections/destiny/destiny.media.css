@@ -1,0 +1,54 @@
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1399px) {
+
+	.destiny__image {
+		width: 100%;
+	}
+}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1199px) {}
+
+/* md <= Large (lg) */
+@media (max-width : 991px) {
+
+	.destiny__line {
+		margin: 50px auto 20px;
+	}
+
+	.destiny__title {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+	.destiny__image {
+		margin-bottom: 50px;
+	}
+
+}
+
+/* sm <= Medium (md) */
+@media (max-width : 767px) {
+
+	.destiny__title {
+		width: 500px;
+	}
+}
+
+/* xs <= Small (sm) */
+@media (max-width : 575px) {
+
+	.destiny__line {
+		margin: 30px auto 15px;
+	}
+
+	.destiny__title {
+		width: 78%;
+		font-size: 16px;
+	}
+
+	.destiny__image {
+		margin-bottom: 30px;
+	}
+
+}

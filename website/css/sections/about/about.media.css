@@ -1,0 +1,42 @@
+@media (max-width : 1399px) {
+	.about .container {
+		max-width: 1140px;
+	}
+}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1199px) {
+	.about .container {
+		max-width: 960px;
+	}
+}
+
+/* md <= Large (lg) */
+@media (max-width : 991px) {
+	.about__content {
+		margin: 50px 0 30px;
+	}
+
+	.about__trailer {
+		margin-bottom: 50px;
+	}
+}
+
+/* sm <= Medium (md) */
+@media (max-width : 767px) {
+	.about__content-text {
+		margin-bottom: 20px;
+	}
+}
+
+/* xs <= Small (sm) */
+@media (max-width : 575px) {
+	.about__content {
+		margin-top: 30px;
+	}
+
+	.about__trailer {
+		padding-bottom: 50%;
+		margin-bottom: 30px;
+	}
+}

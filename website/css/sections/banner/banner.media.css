@@ -1,0 +1,25 @@
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1399px) {}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1199px) {
+
+	.banner {
+		margin-top: 102px;
+	}
+}
+
+/* md <= Large (lg) */
+@media (max-width : 991px) {}
+
+/* sm <= Medium (md) */
+@media (max-width : 767px) {}
+
+/* xs <= Small (sm) */
+@media (max-width : 575px) {
+
+	.banner {
+		margin-top: 92px;
+	}
+
+}

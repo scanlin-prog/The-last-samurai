@@ -1,0 +1,169 @@
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1399px) {
+
+	.awards .container {
+		max-width: 1140px;
+	}
+
+	.awards-info {
+		width: 92%;
+	}
+
+	.awards-text {
+		width: 92%;
+		padding-left: 35px;
+	}
+
+	.awards-info__subtitle {
+		padding: 4px 14px;
+	}
+}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1199px) {
+
+	.awards .container {
+		max-width: 960px;
+	}
+
+	.awards-info {
+		width: calc(100% - 20px);
+	}
+
+	.awards-text {
+		width: calc(100% - 20px);
+		padding-left: 35px;
+	}
+
+	.awards-info__subtitle {
+		padding: 4px 14px;
+	}
+
+	.awards__image {
+		margin-bottom: 20px;
+	}
+
+	.awards__image:last-of-type {
+		margin: 0 auto 70px;
+	}
+}
+
+/* md <= Large (lg) */
+@media (max-width : 991px) {
+
+	.awards .container {
+		max-width: 720px;
+	}
+
+	.awards-info {
+		margin-top: 50px;
+	}
+
+	.awards-info__left {
+		margin: 15px;
+	}
+
+	.awards-info__title {
+		font-size: 22px;
+	}
+
+	.awards-info__describe {
+		font-size: 14px;
+
+	}
+
+	.awards-info__button {
+		width: 180px;
+		height: 40px;
+		margin: 15px;
+	}
+
+	.awards-info__subtitle {
+		padding: 1px 8px;
+		font-size: 14px;
+		top: -14px;
+	}
+
+	.awards-text {
+		padding-left: 25px;
+		margin-bottom: 30px;
+	}
+
+	.awards__image:last-of-type {
+		margin-bottom: 50px;
+	}
+
+}
+
+/* sm <= Medium (md) */
+@media (max-width : 767px) {
+
+	.awards {
+		padding: 0 25px;
+	}
+
+	.awards-info {
+		flex-direction: column;
+		padding: 0;
+		text-align: center;
+	}
+
+	.awards-info__left {
+		margin: 20px auto 0;
+	}
+
+	.awards-info__title {
+		font-size: 24px;
+	}
+
+	.awards-info__button {
+		width: 240px;
+		height: 50px;
+	}
+
+	.awards-info__subtitle {
+		white-space: nowrap;
+	}
+
+	.awards-text {
+		padding: 0;
+		text-align: center;
+	}
+
+	.awards__image-describe {
+		font-size: var(--small-text);
+		line-height: 1.5;
+		width: 90%;
+	}
+}
+
+/* xs <= Small (sm) */
+@media (max-width : 575px) {
+
+	.awards {
+		padding: 0;
+	}
+
+	.awards-info {
+		margin-top: 30px;
+	}
+
+	.awards-info__title {
+		font-size: 22px;
+	}
+
+	.awards__image {
+		margin: 0 auto 20px;
+		max-width: 380px;
+	}
+
+	.awards__image:last-of-type {
+		margin-bottom: 30px;
+	}
+
+	.awards__image-describe {
+		font-size: var(--regular-text);
+		line-height: 1.7;
+	}
+
+}
