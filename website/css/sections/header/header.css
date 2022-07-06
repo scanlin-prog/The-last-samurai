@@ -3,7 +3,7 @@
 	width: 100%;
 	background-color: var(--deep);
 	position: fixed;
-	z-index: 100;
+	z-index: 2;
 	top: 0;
 	left: 0;
 }

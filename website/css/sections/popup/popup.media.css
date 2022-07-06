@@ -1,0 +1,41 @@
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1399px) {}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1199px) {
+	.popup__button-arrow {
+		width: 70px;
+		height: 70px;
+	}
+}
+
+/* md <= Large (lg) */
+@media (max-width : 991px) {
+	.popup__container-image {
+		position: static;
+	}
+
+	.popup__container-image {
+		width: 60%;
+	}
+}
+
+/* sm <= Medium (md) */
+@media (max-width : 767px) {
+	.popup__button-arrow {
+		width: 50px;
+		height: 50px;
+	}
+
+	.popup__button-icon {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+/* xs <= Small (sm) */
+@media (max-width : 575px) {
+	.popup__container-image {
+		width: 90%;
+	}
+}

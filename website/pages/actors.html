@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
 
@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<meta name="description" content="О фильме" />
+	<meta name="description" content="Об актерах" />
 	<meta name="keywords" content="кино, самураи, традиции" />
 	<meta name="author" content="Иван Ротарь" />
 	<link rel="icon" href="./images/icons/samurai_face.svg" />
@@ -16,14 +16,14 @@
 	<link rel="stylesheet" href="../libs/bootstrap/css/bootstrap-reboot.min.css" />
 	<link rel="stylesheet" href="../libs/bootstrap/css/bootstrap-grid.min.css" />
 
-	<link rel="stylesheet" href="../css/pages/about.css" />
+	<link rel="stylesheet" href="../css/pages/actors.css" />
 
 	<title>The last samurai</title>
 
 </head>
 
 <body>
-	
+
 	<div class="d-lg-none header-overlay"></div>
 	<header class="header">
 		<div class="container">
@@ -32,7 +32,7 @@
 				<div class="col col-lg header__logo"></div>
 
 				<div class="col-8 d-lg-none header__main-logo-link">
-					<a href="./about.html">
+					<a href="./actors.html">
 						<div class="header__main-logo"></div>
 					</a>
 				</div>
@@ -41,12 +41,12 @@
 					<ul class="header__menu-items">
 						<li class="header__menu-item"><a href="../main.html" class="header__menu-link">Главная</a>
 						</li>
-						<li class="header__menu-item"><a href="./about.html"
-								class="header__menu-link header__menu-link_active">О фильме</a>
+						<li class="header__menu-item"><a href="./about.html" class="header__menu-link">О
+								фильме</a>
 						</li>
-						<li class="header__menu-item"><a href="./actors.html" class="header__menu-link">Актёры</a></li>
+						<li class="header__menu-item"><a href="./actors.html" class="header__menu-link header__menu-link_active">Актёры</a></li>
 						<li class="header__menu-item header__main-logo-link d-none d-lg-block">
-							<a href="./about.html">
+							<a href="./actors.html">
 								<div class="header__main-logo"></div>
 							</a>
 						</li>
@@ -76,36 +76,14 @@
 		</div>
 	</header>
 
-	<section class="banner">
-		<img src="../images/about-film/about-film.png" alt="banner" class="" fill="cover" width="100%">
-	</section>
-
-	<section class="about">
+	<section class="actors">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-10 col-lg-8 about__content">
-					<p class="about__content-text">Том Круз играет главную роль в этой грандиозной эпопее, действие которой
-						разворачивается в Японии в 1870-х годах, в роли
-						капитана Натана Олгрена, уважаемого американского военного офицера, нанятого императором Японии для обучения
-						первой
-						армии страны искусству современной войны.</p>
-					<p class="about__content-text">Император пытается искоренить древних имперских воинов-самураев в рамках
-						подготовки к более прозападной и благоприятной
-						для торговли политике правительства.</p>
-					<p class="about__content-text">Олгрен неожиданно оказывается под впечатлением и влиянием своих встреч с
-						японскими воинами, ставя его в центр борьбы
-						между двумя эпохами и двумя мирами, с только его собственным
-						чувством чести чтобы вести его как Последнего Самурая.</p>
-				</div>
-				<div class="col-sm-8 about__trailer">
-					<iframe type="text/html"
-						src="https://www.youtube.com/embed/SjZM2RszGnk" title="YouTube video player"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
-				</div>
+			<div id="actors-place" class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-5">
+				
 			</div>
 		</div>
 	</section>
+
 
 	<footer class="footer">
 		<div class="footer-contacts">
@@ -147,10 +125,38 @@
 		</button>
 	</footer>
 
+	<!-- <div class="popup" id="popup-image">
+		<div class="popup__container-image">
+			<img src="../images/actors/Hiroyuki_Sanada.png" class="popup__image" alt="Изображение">
+			<div class="popup__description">
+				<h3 class="popup__title-character">Юдзи</h3>
+				<h4 class="popup__title-actor">Хироюки Санада</h4>
+				<p class="popup__description-about">Самурай Юдзи - один из военачальников Кацумото, а также опытный воин. Преданый и верный своему господину и всегда готов
+				его защитить, даже ценой своей жизни. Некоторое время ненавидел Нэйтана, однако после успешных тренировок американца
+				начал проявлять к нему уважение.</p>
+			</div>
+		</div>
+		<button class="d-none d-sm-flex popup__button-close" type="button"></button>
+		<button class="d-none d-sm-flex popup__button-arrow popup__button-next">
+			<div class="popup__button-icon"></div>
+		</button>
+		<button class="d-none d-sm-flex popup__button-arrow popup__button-prev">
+			<div class="popup__button-icon"></div>
+		</button>
+	</div> -->
+
+	<template id="actor-template">
+		<div class="actor">
+			<img alt="Изображение" class="actor__image">
+			<p class="actor__name"></p>
+		</div>
+	</template>
+
 
 	<script src="../libs/jquery/jquery-3.6.0.min.js"></script>
 
 	<script src="../js/common.js"></script>
+	<script src="../js/actors.js"></script>
 
 </body>
 

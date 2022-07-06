@@ -1,0 +1,30 @@
+.actors {
+	background-color: var(--dark-content);
+	margin-top: 122px;
+	border: 1px solid transparent;
+}
+
+.actors .container {
+	max-width: 1200px;
+	padding: 0;
+}
+
+.actors .row {
+	margin: 70px 0 50px;
+}
+
+.actor {
+	margin: 0 0 20px;
+}
+
+.actor__image {
+	margin: 0 0 8px;
+	width: 100%;
+	cursor: pointer;
+}
+
+.actor__name {
+	text-align: center;
+	font-size: var(--medium-text);
+	margin: 0;
+}
