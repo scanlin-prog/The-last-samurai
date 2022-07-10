@@ -60,7 +60,94 @@ const actorsData = [
 		url: '../images/actors/Shun_Sugata.png',
 		name: 'самурай Накао'
 	},
-]
+];
+const popup = document.querySelector('#popup-image');
+const popupContainerImage = popup.querySelector('.popup__container-image');
+const popupImage = popup.querySelector('.popup__image');
+const popupNameActor = popup.querySelector('.popup__title-actor');
+const popupButtonClose = popup.querySelector('.popup__button-close');
+const popupButtonNext = popup.querySelector('.popup__button-next');
+const popupButtonPrev = popup.querySelector('.popup__button-prev');
+
+function toggleButtonState(array, index) {
+	if (index <= 0) {
+		popupButtonPrev.classList.remove('d-sm-flex');
+	} else if (index >= (array.length - 1)) {
+		popupButtonNext.classList.remove('d-sm-flex');
+	} else {
+		popupButtonNext.classList.add('d-sm-flex');
+		popupButtonPrev.classList.add('d-sm-flex');
+	}
+}
+
+function handleSwitches(evt) {
+	const currentActorIndex = actorsData.findIndex(actor => actor.name === popupNameActor.textContent);
+	let actorIndex = currentActorIndex;
+	switch (evt.currentTarget) {
+		case popupButtonNext:
+			actorIndex += 1;
+			break;
+		case popupButtonPrev:
+			actorIndex -= 1;
+			break;
+	}
+	popupContainerImage.classList.add('popup__container-image_hidden');
+	setTimeout(() => {
+		loadInformation(actorsData, actorIndex);
+		popupContainerImage.classList.remove('popup__container-image_hidden');
+	}, 250);
+	
+}
+
+function preparePopup(evt) {
+	const currentName = evt.target.closest('.actor').querySelector('.actor__name').textContent;
+	const currentActorIndex = actorsData.findIndex(actor => actor.name === currentName);
+	loadInformation(actorsData, currentActorIndex);
+}
+
+function loadInformation(array, actorIndex) {
+	toggleButtonState(array, actorIndex);
+
+	popupImage.src = array[actorIndex].url;
+	popupNameActor.textContent = array[actorIndex].name;
+}
+
+function handleEscClose(evt) {
+	if (evt.key === 'Escape') {
+		closePopup();
+	}
+}
+
+function handleMouseClose(evt) {
+	evt.target.classList.remove('popup_opened');
+}
+
+function setEventListeners() {
+	popupButtonClose.addEventListener('click', closePopup);
+	popup.addEventListener('mousedown', handleMouseClose);
+	document.addEventListener('keydown', handleEscClose);
+	popupButtonNext.addEventListener('click', handleSwitches);
+	popupButtonPrev.addEventListener('click', handleSwitches);
+}
+
+function removeSetEventListeners() {
+	popupButtonClose.removeEventListener('click', closePopup);
+	popup.removeEventListener('mousedown', handleMouseClose);
+	document.removeEventListener('keydown', handleEscClose);
+	popupButtonNext.removeEventListener('click', handleSwitches);
+	popupButtonPrev.removeEventListener('click', handleSwitches);
+}
+
+function openPopup(evt) {
+	preparePopup(evt);
+	setEventListeners();
+	popup.classList.add('popup_opened');
+}
+
+function closePopup() {
+	popup.classList.remove('popup_opened');
+	removeSetEventListeners();
+}
 
 function getTemplate() {
 	const cardElement = document.querySelector('#actor-template').content.cloneNode(true);
@@ -72,6 +159,7 @@ function generateCard(card) {
 	const actor = getTemplate();
 	const actorImage = actor.querySelector('.actor__image');
 	const actorName = actor.querySelector('.actor__name');
+	actorImage.addEventListener('click', openPopup);
 
 	actorImage.src = card.url;
 	actorName.textContent = card.name;
