@@ -122,7 +122,7 @@
 }
 
 .header__icon-close {
-	background-image: url(../../../images/icons/close_item.svg);
+	background-image: url(../../../images/icons/button-close.svg);
 	width: 40px;
 	height: 40px;
 }
