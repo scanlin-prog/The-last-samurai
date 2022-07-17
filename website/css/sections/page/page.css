@@ -20,7 +20,7 @@
 	--userfont: raleway-tls, sans-serif;
 	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 
-	--transition: .25s ease-out;
+	--transition: .25s linear;
 }
 
 /* BOOTSTRAP SETTINGS SECTION */

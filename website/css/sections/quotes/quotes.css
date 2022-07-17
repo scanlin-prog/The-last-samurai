@@ -1,0 +1,58 @@
+.quotes {
+	background-color: var(--dark-content);
+	border: 1px solid transparent;
+}
+
+.quotes__title {
+	font-size: var(--regular-header);
+	margin: 70px auto 45px;
+	text-align: center;
+}
+
+.quotes .container {
+	max-width: 900px;
+	margin: 0 auto 70px;
+}
+
+.quotes .row {
+	flex-direction: column;
+}
+
+.quote {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	border-top: 1px solid #fff;
+	height: 188px;
+}
+
+.quote:last-of-type {
+	border-bottom: 1px solid #fff;
+}
+
+.quote__icon {
+	background-image: url(../../../images/icons/quotation_marks.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+}
+
+.quote__text {
+	font-size: var(--medium-text);
+	text-align: center;
+	width: 87%;
+}
+
+.quote__icon-top {
+	top: 15px;
+	left: 20px;
+}
+
+.quote__icon-bottom {
+	bottom: 15px;
+	right: 20px;
+}

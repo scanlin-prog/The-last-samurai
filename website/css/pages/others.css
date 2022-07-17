@@ -2,5 +2,11 @@
 @import url(../sections/page/page.css);
 @import url(../sections/header/header.css);
 @import url(../sections/header/header.media.css);
+@import url(../sections/services/services.css);
+@import url(../sections/services/services.media.css);
+@import url(../sections/article/article.css);
+@import url(../sections/article/article.media.css);
+@import url(../sections/quotes/quotes.css);
+@import url(../sections/quotes/quotes.media.css);
 @import url(../sections/footer/footer.css);
 @import url(../sections/footer/footer.media.css);
